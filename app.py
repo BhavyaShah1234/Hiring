@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 app = flask.Flask(__name__, template_folder=r'C:\Users\user\Desktop\Machine Learning\Deployment\template')
-model = pickle.load(open(r'C:\Users\user\Desktop\Machine Learning\Deployment\Hiring.pkl', 'rb'))
+model = pickle.load(open(r'C:\Users\user\Desktop\Machine Learning\Deployment\model.pkl', 'rb'))
 
 @app.route('/')
 def home():
